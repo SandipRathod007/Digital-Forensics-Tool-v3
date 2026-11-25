@@ -1,5 +1,3 @@
-# Digital-Forensics-Tool-v3
-Read-only Python Digital Forensics &amp; Incident Triage Tool with Live GUI Monitor and PDF export.
 # Digital Forensics & Incident Triage Tool v3.0
 
 A lightweight, strictly read-only Python tool for fast live system triage and real-time monitoring on Windows and Linux. Built using **Python 3.6+ standard library only** (zero external packages required).
@@ -19,3 +17,19 @@ A lightweight, strictly read-only Python tool for fast live system triage and re
 ### 1. Launch the Live GUI (Recommended)
 ```bash
 python3 gui.py
+```
+*(On Linux, if Tkinter is missing, install it once with `sudo apt install python3-tk`.)*
+
+### 2. Run via CLI Only
+```bash
+python3 main.py
+```
+
+## Output Files
+Running a scan generates three files in the project directory:
+* `forensic_report.html` — Interactive dashboard (with Search, Light/Dark mode, and Export to PDF).
+* `forensic_report.json` — Raw structured forensic data.
+* `forensic_report_integrity.sha256` — Chain-of-custody hash seal for verifying report integrity.
+
+## Disclaimer
+For authorized forensic triage and educational use only. This tool operates in strictly read-only mode and does not modify system state.
